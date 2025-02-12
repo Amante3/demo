@@ -1,0 +1,52 @@
+<ul>
+    <li>
+        <h2 onclick="toggleVisibility('intro')">Personal Introduction</h2>
+        <p id="intro" style="display: none;">Hi, I’m Eloisa Amante, an aspiring web developer passionate about creating user-friendly websites. I’m currently learning front-end development with HTML, CSS, JavaScript, and React, and I’m passionate about creating clean, responsive websites. I'm eager to apply my skills and keep growing in the field of web development.</p>
+    </li>
+
+    <li>
+        <h2 onclick="toggleVisibility('experience')">Professional Experience</h2>
+        <p id="experience" style="display: none;">I’m new to the web development field, but I’ve been building personal projects to sharpen my skills. I’ve gained hands-on experience in creating responsive websites, experimenting with frameworks like React, and continuously learning new technologies. I’m excited to contribute to real-world projects and work alongside experienced professionals to further develop my expertise.</p>
+    </li>
+
+    <li>
+        <h2 onclick="toggleVisibility('education')">Education and Certifications</h2>
+        <p id="education" style="display: none;">I am continuously expanding my skills in web development through online courses and self-driven learning. Some of my key educational achievements include:</p>
+        <ul>
+            <li id="FreeCodeCamp" style="display: none;"><strong>FreeCodeCamp:</strong> Completed the Full Stack Web Development certification, covering topics such as front-end development (HTML, CSS, JavaScript), back-end development (Node.js, Express), and databases (MongoDB).</li>
+            <li id="Udemy" style="display: none;"><strong>Udemy:</strong> Finished the Web Development Bootcamp course, which provided a comprehensive overview of web development concepts and practical projects to apply the knowledge.</li>
+        </ul>
+    </li>
+
+    <li>
+        <h2 onclick="toggleVisibility('skills')">Skills and Competencies</h2>
+        <p id="skills" style="display: none;"><strong>Front-End Development:</strong> Proficient in HTML, CSS, JavaScript, and React.</p>
+        <p id="skills" style="display: none;"><strong>Responsive Design:</strong> Experienced in building mobile-friendly websites with modern CSS frameworks.</p>
+        <p id="skills" style="display: none;"><strong>Version Control:</strong> Familiar with Git and GitHub for collaboration and code management.</p>
+        <p id="skills" style="display: none;">Problem Solving:</strong> Strong analytical skills for debugging and optimizing code.</p>
+        <p id="skills" style="display: none;"><strong>Learning and Adaptability:</strong> Continuously improving my skills through online courses and hands-on projects.</p>
+    </li>
+
+    <li>
+        <h2 onclick="toggleVisibility('projects')">Projects and Achievements</h2>
+        <p id="projects" style="display: none;"><strong>Personal Portfolio</strong> Built a responsive portfolio website showcasing my skills, projects, and contact information using HTML, CSS, and JavaScript.</p>
+    </li>
+
+    <li>
+        <h2 onclick="toggleVisibility('philosophy')">Goals and Professional Philosophy</h2>
+        <p id="philosophy" style="display: none;">My goal is to continuously grow as a web developer by working on real-world projects and collaborating with experienced professionals. I believe that great web development goes beyond just coding; it’s about understanding users and creating seamless, engaging experiences.</p>
+    </li>
+</ul>
+<p>"Quality means doing it right when no one is looking." – Henry Ford
+</p>
+
+<script>
+    function toggleVisibility(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
